@@ -1,0 +1,1 @@
+<a {{ $attributes}} class="text-sm/6 font-semibold text-white">{{ $slot }} <span aria-hidden="true">&rarr;</span></a>
