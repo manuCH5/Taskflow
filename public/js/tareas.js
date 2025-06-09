@@ -8,10 +8,9 @@ var id;
 
 let currentTask = null;
 
-//* functions
 //#region  DRAGABLE
 const handleDragover = (event) => {
-  event.preventDefault(); // allow drop
+  event.preventDefault(); 
 
   const draggedTask = document.querySelector(".dragging");
   const target = event.target.closest(".task, .tasks");
@@ -19,17 +18,14 @@ const handleDragover = (event) => {
   if (!target || target === draggedTask) return;
 
   if (target.classList.contains("tasks")) {
-    // target is the tasks element
     const lastTask = target.lastElementChild;
     if (!lastTask) {
-      // tasks is empty
       target.appendChild(draggedTask);
     } else {
       const { bottom } = lastTask.getBoundingClientRect();
       event.clientY > bottom && target.appendChild(draggedTask);
     }
   } else {
-    // target is another
     const { top, height } = target.getBoundingClientRect();
     const distance = top + height / 2;
 

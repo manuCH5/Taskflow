@@ -40,6 +40,8 @@
                     <x-formImput type="password" name="password" id="password">Contraseña</x-formImput>
                     <x-formError name="password"></x-formError>
 
+                    <small class="px-10"><a href="/register">¿Aún no tienes cuenta?</a></small>
+
                     <div class="mt-5 flex items-center justify-center gap-x-6 pb-5">
                         <button type="submit" class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-xshover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Log in</button>
                     </div>

@@ -4,46 +4,8 @@
   </x-slot:head>
   <x-slot:title>Tareas</x-slot:title>
   <x-slot:h1>Tareas</x-slot:h1>
-  <!-- 
-  #region NO TAREAS 
-  No tienes ninguna tarea -->
-  <!-- @if(!$tasks) -->
-  <!-- <div class="container columns w-full "> -->
-  <!--Proxima tarea -->
-  <!-- <div class="column">
-      <div class="column-title">
-        <h3 data-tasks="0">Próximas Tareas</h3>
-        <button data-add><i class="bi bi-plus">➕</i></button>
-      </div>
-      <div class="tasks" id="next"></div>
-    </div> -->
-  <!--Por hacer tarea -->
-  <!-- <div class="column">
-      <div class="column-title">
-        <h3 data-tasks="0">Por Hacer</h3>
-        <button data-add><i class="bi bi-plus">➕</i></button>
-      </div>
-      <div class="tasks" id="todo">
-      </div>
-    </div> -->
-  <!--En curso tarea -->
-  <!-- <div class="column">
-      <div class="column-title">
-        <h3 data-tasks="0">En Curso</h3>
-        <button data-add><i class="bi bi-plus">➕</i></button>
-      </div>
-      <div class="tasks" id="progress"></div>
-    </div> -->
-  <!--Finalizadas-->
-  <!-- <div class="column">
-      <div class="column-title">
-        <h3 data-tasks="0">Finalizadas</h3>
-      </div>
-      <div class="tasks" id="done"></div>
-    </div>
-  </div> -->
-  <!-- @else -->
-  <!-- 
+
+<!--
     #region TAREAS 
   -->
   <div class="container columns">
@@ -126,7 +88,6 @@
       </div>
     </div>
   </div>
-  <!-- @endif -->
   <!-- 
   #region MODAL
   -->
