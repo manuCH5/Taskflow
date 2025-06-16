@@ -106,8 +106,7 @@ document.addEventListener('DOMContentLoaded', function () {
     })
       .then(response => response.json())
       .then(data => {
-        alert('Miembro añadido correctamente!');
-        // Opcional: Actualizar la lista de miembros en la página sin recargar
+        // alert('Miembro añadido correctamente!');
         nombreInput.value = '';
         emailInput.value = '';
         roleSelect.value = 'admin';
@@ -169,7 +168,7 @@ document.addEventListener('DOMContentLoaded', function () {
       .then(response => response.json())
       .then(data => {
 
-        alert(data.message);
+        // alert(data.message);
         li = document.querySelector(`[data-id="${idEdit}"]`);
         li.innerHTML = `<div class="flex items-center space-x-4 rtl:space-x-reverse">
             <div class="shrink-0">
@@ -221,7 +220,7 @@ document.addEventListener('DOMContentLoaded', function () {
     })
       .then(response => response.json())
       .then(data => {
-        alert("borrado");
+        // alert("borrado");
         let child = document.querySelector(`[data-id="${idEdit}"]`);
         let parent = document.getElementById("teamList");
 

@@ -28,7 +28,7 @@
 
                     <div class="px-10 pt-3">
                         <div class="flex items-center rounded-mdpl-3">
-                            <textarea id="content" name="content" rows="4" class="block p-2.5 w-full text-sm text-black bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:border-gray-600 dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Leave a comment..."></textarea>
+                            <textarea id="content" name="content" rows="4" class="block p-2.5 w-full text-sm text-black bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:border-gray-600 dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Describe tu incidencia..."></textarea>
                         </div>
                     </div>
                     <div class="mt-5 flex items-center justify-center gap-x-6 pb-5">

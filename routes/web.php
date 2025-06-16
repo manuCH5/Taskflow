@@ -16,17 +16,62 @@ use Illuminate\Support\Facades\Route;
 use App\Mail\TestMail;
 
 use function Laravel\Prompts\select;
+
+/**
+ * @OA\Get(
+ *     path="/",
+ *     summary="Landing page",
+ *     @OA\Response(response=200, description="Página de bienvenida")
+ * )
+ */
 //Landing page
 Route::get('/', function () {
     return view('welcome');
 });
 
 //Register page
+/**
+ * @OA\Get(
+ *     path="/register",
+ *     summary="Formulario de registro",
+ *     @OA\Response(response=200, description="Formulario de registro")
+ * )
+ */
 Route::get('/register', [UserRegistered::class, 'create']);
+/**
+ * @OA\Post(
+ *     path="/register",
+ *     summary="Registro de usuario",
+ *     @OA\RequestBody(required=true, description="Datos de usuario"),
+ *     @OA\Response(response=200, description="Usuario registrado")
+ * )
+ */
 Route::post('/register', [UserRegistered::class, 'store']);
 //Login page
+/**
+ * @OA\Get(
+ *     path="/login",
+ *     summary="Formulario de login",
+ *     @OA\Response(response=200, description="Formulario de login")
+ * )
+ */
 Route::get('/login', [SessionController::class, 'create']);
+/**
+ * @OA\Post(
+ *     path="/login",
+ *     summary="Iniciar sesión",
+ *     @OA\RequestBody(required=true, description="Credenciales"),
+ *     @OA\Response(response=200, description="Sesión iniciada")
+ * )
+ */
 Route::post('/login', [SessionController::class, 'store']);
+/**
+ * @OA\Post(
+ *     path="/logout",
+ *     summary="Cerrar sesión",
+ *     @OA\Response(response=200, description="Sesión cerrada")
+ * )
+ */
 Route::post('/logout', [SessionController::class, 'destroy']);
 //Dashboard
 Route::get('/inicio', function () {

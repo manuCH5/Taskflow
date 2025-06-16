@@ -70,7 +70,6 @@
           </span>
           <div class="p-4 bg-white border border-gray-200 rounded-lg shadow-xs hover:bg-violet-100">
             <div class="items-center justify-between mb-3 sm:flex">
-              <time class="mb-1 text-xs font-normal text-gray-400 sm:order-last sm:mb-0">2 hours ago</time>
               <div class="text-sm font-normal text-violet-900 lex">{{ $log->content }}</div>
             </div>
           </div>

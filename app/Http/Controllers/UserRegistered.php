@@ -10,6 +10,13 @@ use Illuminate\Validation\Rules\Password;
 
 class UserRegistered extends Controller
 {
+    /**
+ * @OA\Get(
+ *     path="/register",
+ *     summary="Formulario de registro",
+ *     @OA\Response(response=200, description="Formulario de registro")
+ * )
+ */
     public function create(){
         return view('register');
     }

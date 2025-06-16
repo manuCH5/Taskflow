@@ -1,0 +1,21 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Documentacion Taskflow",
+        "description": "Documentación del proyecto Taskflow",
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/register": {
+            "get": {
+                "summary": "Formulario de registro",
+                "operationId": "e886283e9ad842f666070de8658440d5",
+                "responses": {
+                    "200": {
+                        "description": "Formulario de registro"
+                    }
+                }
+            }
+        }
+    }
+}
